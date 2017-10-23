@@ -29,6 +29,12 @@ RSpec.describe WordSearch::Puzzle do
         end
     end
 
+    describe "#grid" do 
+        it "a puzzle has a grid attribute" do
+            expect(word_search).to respond_to('grid')
+        end
+    end
+
     describe "#parse_file" do 
         it "can be called with no arguments" do 
             expect(word_search).to respond_to(:parse_file)
