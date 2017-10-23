@@ -33,5 +33,10 @@ RSpec.describe WordSearch::Puzzle do
         it "can be called with no arguments" do 
             expect(word_search).to respond_to(:parse_file)
         end
+
+        it "parses the first line of the file name into an array of words and sets it to word_list" do
+            word_search.parse_file
+            expect(word_search.word_list).to eq(["BONES", "KHAN", "KIRK", "SCOTTY", "SPOCK", "SULU", "UHURA"])
+        end
     end
 end

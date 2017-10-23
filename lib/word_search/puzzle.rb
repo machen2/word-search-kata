@@ -6,5 +6,7 @@ class WordSearch::Puzzle
     end
 
     def parse_file
+        file = File.readlines(@file_name)
+        @word_list = file.shift.strip.split(',')
     end
 end
