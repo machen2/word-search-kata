@@ -23,6 +23,12 @@ RSpec.describe WordSearch::Puzzle do
         end
     end
 
+    describe "#word_list" do 
+        it "a puzzle has a word_list attribute" do 
+            expect(word_search).to respond_to('word_list')
+        end
+    end
+
     describe "#parse_file" do 
         it "can be called with no arguments" do 
             expect(word_search).to respond_to(:parse_file)

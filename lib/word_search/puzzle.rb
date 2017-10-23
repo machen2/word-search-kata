@@ -1,5 +1,5 @@
 class WordSearch::Puzzle
-    attr_reader :file_name
+    attr_reader :file_name, :word_list
 
     def initialize(file_name)
         @file_name = file_name
