@@ -22,4 +22,10 @@ RSpec.describe WordSearch::Puzzle do
             expect(word_search).to respond_to('file_name')
         end
     end
+
+    describe "#parse_file" do 
+        it "can be called with no arguments" do 
+            expect(word_search).to respond_to(:parse_file)
+        end
+    end
 end
