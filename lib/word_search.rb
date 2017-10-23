@@ -1,5 +1,2 @@
 require "word_search/version"
-
-module WordSearch
-  # Your code goes here...
-end
+require_relative "word_search/puzzle"
