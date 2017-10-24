@@ -15,6 +15,10 @@ RSpec.describe WordSearch::Puzzle do
         it "initializes a puzzle instance with a given file name" do 
             expect(word_search.file_name).to eq("test_puzzle.txt")
         end
+
+        it "initializes with an empty hash for puzzle_solution" do 
+            expect(word_search.puzzle_solution).to eq({})
+        end
     end
 
     describe "#file_name" do 

@@ -4,6 +4,7 @@ class WordSearch::Puzzle
     def initialize(file_name)
         @file_name = file_name
         @grid = []
+        @puzzle_solution = Hash.new
     end
 
     def parse_file
