@@ -29,6 +29,12 @@ RSpec.describe WordSearch::Puzzle do
         end
     end
 
+    describe "#puzzle_solution" do 
+        it "a puzzle has a puzzle_solution attribute" do
+            expect(word_search).to respond_to('puzzle_solution')
+        end
+    end
+
     describe "#grid" do 
         it "a puzzle has a grid attribute" do
             expect(word_search).to respond_to('grid')
