@@ -13,4 +13,7 @@ class WordSearch::Puzzle
             @grid << line.strip.split(',')
         end
     end
+
+    def search_grid
+    end
 end
